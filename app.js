@@ -28,6 +28,11 @@ const askQuestions = () => {
         name: "id",
         message: "What is the id of the team member?",
       },
+      {
+        type: "input",
+        name: "email",
+        message: "What is your email address?",
+      },
 
       {
         type: "list",
@@ -94,7 +99,7 @@ const askQuestions = () => {
         const html = render(employees);
         // console.log(html)
         writeFileAsync(outputPath, html).then(() => {
-          console.log("written");
+         // console.log("written");
         });
       }
     });
